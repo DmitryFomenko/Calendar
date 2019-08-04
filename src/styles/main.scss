@@ -1,7 +1,78 @@
 @import "utils";
-@import "fonts";
-@import "typography";
 
 body {
-  background: $c-gray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.calendar {
+  position: absolute;
+  left: 300px;
+  display: grid;
+  grid-template-columns: repeat(7, $cell-width);
+  grid-template-rows: repeat(6, $cell-heigth);
+  grid-gap: $gap;
+
+  & div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: $static-backg-color;
+    transition: $animation-time;
+  }
+
+  & div:hover {
+    background-color: $action-backg-color;
+    cursor: pointer;
+    border: 1px dashed;
+    transform: translateY(-20px);
+    transition: $animation-time ease-in-out;
+  }
+
+  @for $i from 1 through 31 {
+    & div:nth-of-type(#{$i})::before {
+      content: ("#{$i}");
+    }
+  }
+}
+
+.calendar-mon div:first-of-type {
+  grid-column-start: 1;
+}
+
+.calendar-tue div:first-of-type {
+  grid-column-start: 2;
+}
+
+.calendar-wed div:first-of-type {
+  grid-column-start: 3;
+}
+
+.calendar-thu div:first-of-type {
+  grid-column-start: 4;
+}
+
+.calendar-fri div:first-of-type {
+  grid-column-start: 5;
+}
+
+.calendar-sat div:first-of-type {
+  grid-column-start: 6;
+}
+
+.calendar-sun div:first-of-type {
+  grid-column-start: 7;
+}
+
+.calendar-30 div:nth-of-type(30) ~ div {
+  display: none;
+}
+
+.calendar-28 div:nth-of-type(28) ~ div {
+  display: none;
+}
+
+.calendar-29 div:nth-of-type(29) ~ div {
+  display: none;
 }
