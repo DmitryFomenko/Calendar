@@ -9,119 +9,86 @@ body {
   grid-template-columns: repeat(7, 100px);
   grid-template-rows: repeat(6, 100px);
   grid-gap: 1px; }
-
-.calendar div {
-  display: grid;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid black;
-  background-color: #eee;
-  -webkit-transition: 0.8s;
-  transition: 0.8s; }
-
-.calendar div:hover {
-  background-color: pink;
-  cursor: pointer;
-  border: 1px dashed;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-  -webkit-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out; }
-
-.calendar div:nth-of-type(1)::before {
-  content: "1"; }
-
-.calendar div:nth-of-type(2)::before {
-  content: "2"; }
-
-.calendar div:nth-of-type(3)::before {
-  content: "3"; }
-
-.calendar div:nth-of-type(4)::before {
-  content: "4"; }
-
-.calendar div:nth-of-type(5)::before {
-  content: "5"; }
-
-.calendar div:nth-of-type(6)::before {
-  content: "6"; }
-
-.calendar div:nth-of-type(7)::before {
-  content: "7"; }
-
-.calendar div:nth-of-type(8)::before {
-  content: "8"; }
-
-.calendar div:nth-of-type(9)::before {
-  content: "9"; }
-
-.calendar div:nth-of-type(10)::before {
-  content: "10"; }
-
-.calendar div:nth-of-type(11)::before {
-  content: "11"; }
-
-.calendar div:nth-of-type(12)::before {
-  content: "12"; }
-
-.calendar div:nth-of-type(13)::before {
-  content: "13"; }
-
-.calendar div:nth-of-type(14)::before {
-  content: "14"; }
-
-.calendar div:nth-of-type(15)::before {
-  content: "15"; }
-
-.calendar div:nth-of-type(16)::before {
-  content: "16"; }
-
-.calendar div:nth-of-type(17)::before {
-  content: "17"; }
-
-.calendar div:nth-of-type(18)::before {
-  content: "18"; }
-
-.calendar div:nth-of-type(19)::before {
-  content: "19"; }
-
-.calendar div:nth-of-type(20)::before {
-  content: "20"; }
-
-.calendar div:nth-of-type(21)::before {
-  content: "21"; }
-
-.calendar div:nth-of-type(22)::before {
-  content: "22"; }
-
-.calendar div:nth-of-type(23)::before {
-  content: "23"; }
-
-.calendar div:nth-of-type(24)::before {
-  content: "24"; }
-
-.calendar div:nth-of-type(25)::before {
-  content: "25"; }
-
-.calendar div:nth-of-type(26)::before {
-  content: "26"; }
-
-.calendar div:nth-of-type(27)::before {
-  content: "27"; }
-
-.calendar div:nth-of-type(28)::before {
-  content: "28"; }
-
-.calendar div:nth-of-type(29)::before {
-  content: "29"; }
-
-.calendar div:nth-of-type(30)::before {
-  content: "30"; }
-
-.calendar div:nth-of-type(31)::before {
-  content: "31"; }
+  .calendar div {
+    display: grid;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid black;
+    background-color: #eee;
+    -webkit-transition: 0.8s;
+    transition: 0.8s; }
+  .calendar div:hover {
+    background-color: pink;
+    cursor: pointer;
+    border: 1px dashed;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out; }
+  .calendar div:nth-of-type(1)::before {
+    content: "1"; }
+  .calendar div:nth-of-type(2)::before {
+    content: "2"; }
+  .calendar div:nth-of-type(3)::before {
+    content: "3"; }
+  .calendar div:nth-of-type(4)::before {
+    content: "4"; }
+  .calendar div:nth-of-type(5)::before {
+    content: "5"; }
+  .calendar div:nth-of-type(6)::before {
+    content: "6"; }
+  .calendar div:nth-of-type(7)::before {
+    content: "7"; }
+  .calendar div:nth-of-type(8)::before {
+    content: "8"; }
+  .calendar div:nth-of-type(9)::before {
+    content: "9"; }
+  .calendar div:nth-of-type(10)::before {
+    content: "10"; }
+  .calendar div:nth-of-type(11)::before {
+    content: "11"; }
+  .calendar div:nth-of-type(12)::before {
+    content: "12"; }
+  .calendar div:nth-of-type(13)::before {
+    content: "13"; }
+  .calendar div:nth-of-type(14)::before {
+    content: "14"; }
+  .calendar div:nth-of-type(15)::before {
+    content: "15"; }
+  .calendar div:nth-of-type(16)::before {
+    content: "16"; }
+  .calendar div:nth-of-type(17)::before {
+    content: "17"; }
+  .calendar div:nth-of-type(18)::before {
+    content: "18"; }
+  .calendar div:nth-of-type(19)::before {
+    content: "19"; }
+  .calendar div:nth-of-type(20)::before {
+    content: "20"; }
+  .calendar div:nth-of-type(21)::before {
+    content: "21"; }
+  .calendar div:nth-of-type(22)::before {
+    content: "22"; }
+  .calendar div:nth-of-type(23)::before {
+    content: "23"; }
+  .calendar div:nth-of-type(24)::before {
+    content: "24"; }
+  .calendar div:nth-of-type(25)::before {
+    content: "25"; }
+  .calendar div:nth-of-type(26)::before {
+    content: "26"; }
+  .calendar div:nth-of-type(27)::before {
+    content: "27"; }
+  .calendar div:nth-of-type(28)::before {
+    content: "28"; }
+  .calendar div:nth-of-type(29)::before {
+    content: "29"; }
+  .calendar div:nth-of-type(30)::before {
+    content: "30"; }
+  .calendar div:nth-of-type(31)::before {
+    content: "31"; }
 
 .calendar-mon div:first-of-type {
   grid-column-start: 1; }
@@ -152,7 +119,5 @@ body {
 
 .calendar-29 div:nth-of-type(29) ~ div {
   display: none; }
-
-/*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
